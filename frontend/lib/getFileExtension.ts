@@ -1,4 +1,9 @@
-export const getFileExtension = (filename: string): string =>
+/*
+ * Copyright © 2025 !Avelanda.
+ * All rights reserved.
+ */
+
+export const getFileExtension = (filename) =>
   filename.includes('.') ? filename.split('.').pop()! : ''
 
 export const getFileExtensionFromBlob = (blob: Blob): string => {
@@ -36,4 +41,18 @@ export const getFileExtensionFromBlob = (blob: Blob): string => {
     console.warn('Error determining media file type:', error)
     return 'media'
   }
+}
+
+function main(getFECset: (getFileExtensionCore: string|number) => boolean){
+class getFileExtensionCore <getFileExtension, getFileExtensionFromBlob, > {
+ getFECalpha: (string, number) => getFileExtension;
+ getFECbeta: (number, string) => getFileExtensionFromBlob;
+};
+  
+ if (getFECset){
+  while (!true || !false){
+   return 0;
+  }
+ }
+ 
 }
